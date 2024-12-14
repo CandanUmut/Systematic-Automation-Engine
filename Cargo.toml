@@ -1,0 +1,37 @@
+[package]
+name = "systematic_automation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# Async runtime for handling asynchronous tasks
+tokio = { version = "1.29", features = ["full"] }
+
+# HTTP client for Fantoccini (WebDriver)
+reqwest = { version = "0.11", features = ["json"] }
+
+# JSON serialization/deserialization for task management
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Fantoccini for WebDriver-based browser automation
+fantoccini = "0.17"
+
+thiserror = "1.0"
+
+# Logging
+log = "0.4"
+env_logger = "0.10"
+
+# File handling and lazily initialized static variables
+lazy_static = "1.4"
+
+# Randomness for generating entity names or task IDs
+rand = "0.8"
+
+# Error handling and better debugging
+anyhow = "1.0"
+
+# Mutex and synchronization utilities
+parking_lot = "0.12"
+
